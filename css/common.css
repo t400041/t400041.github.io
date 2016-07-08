@@ -38,11 +38,11 @@ h1,h2,h3{font-weight: 500;}
 
 .main-box{width: 100%; padding-left:225px; position: absolute; background: #f2ebea; min-height: 100%;}
 .main-cont{width: 100%;  right: 0; padding: 40px 5%;}
-.main-box .bg-box{width: 100%; margin: 80px auto; height: 450px; background: url("../img/bg-ship.jpg") no-repeat center;
+.main-box .bg-box{width: 100%; margin: 80px auto; height: 450px; background: url("http://ww4.sinaimg.cn/large/ebabbb9dgw1f5mfsagjmxj21hc0q04fn.jpg") no-repeat center;
      box-shadow: inset 0 0 28px 28px #f2ebea; animation: bg-size 5s ease-out; background-size: 100% auto; overflow: hidden; position: relative;}
 .main-box .bg-box p{ text-align: center; font-size: 44px; color:#f7f3ec; text-shadow:0 0 2px #f7f3ec; position: absolute; bottom: 50px;
     animation: title-fade 5s ease-out;  width: 100%;}
-.n-box{opacity: 0; animation: step 2s ease-out 5s; animation-fill-mode: forwards; position: relative;}
+.n-box{opacity: 0; animation: step 1s ease-out 5s; animation-fill-mode: forwards; position: relative;}
 .h-p{font-size: 24px; line-height: 42px; border-bottom: 1px #67848f dashed; margin: 10px 0 5px 0;}
 .ul-psl>li{position: relative; opacity: 0;}
 .ul-psl li span{margin: 0 3px; }
@@ -51,10 +51,10 @@ h1,h2,h3{font-weight: 500;}
 .a-link{padding: 0 10px; height: 30px; line-height: 30px; display: inline-block; border-radius: 10px; background:#67848f;color: #fff; }
 .h-bg{line-height: 30px;}
 .step-1,.step-2,.step-3,.step-4{animation-fill-mode: forwards !important;}
-.step-1{animation: step 2s ease-out; }
-.step-2{animation: step 2s ease-out 2s;}
-.step-3{animation: step 2s ease-out 4s;}
-.step-4{animation: step 2s ease-out 6s;}
+.step-1{animation: step 1s ease-out; }
+.step-2{animation: step 1s ease-out 1s;}
+.step-3{animation: step 1s ease-out 2s;}
+.step-4{animation: step 1s ease-out 3s;}
 
 .ul-skill li{line-height: 32px; margin: 10px 0; }
 
