@@ -5,6 +5,8 @@
     <title>T400041的博客-个人简历</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.css">
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/My.js"></script>
 </head>
 <body>
 <div class="container">
@@ -15,41 +17,62 @@
         <a href="index.html" class="h-title d-block">t400041的博客</a>
         <p class="p-title">Choose wisely.</p>
         <ul class="nav-left">
-            <li><a class="d-block" href="personal.html">个人资料</a></li>
+            <li><a class="d-block" href="personal.html">博主信息</a></li>
             <li><a class="d-block" href="">技术总结</a></li>
         </ul>
     </div>
     <div class="main-box">
         <div class="main-cont">
-            <h2 class="h-p c-grey">个人简历</h2>
-            <ul class="c-grey ul-psl">
-                <li class="step-1">
-                    <h3 class="c-grey h-bg"><span class="fa fa-user"></span>个人信息</h3>
-                    <span>唐尧骅</span>
-                    <span>男</span>
-                    <span>26岁</span>
-                    <span>前端工程师</span>
-                    <span>前端重构师</span>
+            <h2 class="h-p c-grey">博主信息</h2>
+            <div class="c-grey box-psl" >
+                <canvas id="mycell" width="356" height="502"></canvas>
+                <div class="cell cell-1" data-ch="1">
+                    <span class="fa fa-user cell-icon d-block"></span>
+                    <p>基本信息</p>
+                </div>
+                <div class="cell cell-2" data-ch="1">
+                    <span class="fa fa-street-view cell-icon d-block"></span>
+                    <p>前端履历</p>
+                </div>
+                <div class="cell cell-3" data-ch="1">
+                    <span class="fa fa-briefcase cell-icon d-block"></span>
+                    <p>个人项目</p>
+                </div>
+                <div class="cell cell-4" data-ch="1">
+                    <span class="fa fa-star cell-icon d-block"></span>
+                    <p>技术能力</p>
+                </div>
 
-                </li>
-                <li class="step-2">
-                    <h3 class="c-grey h-bg"><span class="fa fa-street-view"></span>个人履历</h3>
+
+
+
+        </div>
+            <div class="step-box">
+                <div class="step-1">
+                    <h3 class="c-grey h-bg"><span class="fa fa-user"></span>个人信息</h3>
+                    <p class="d-clear"><span class="skill-name d-block d-left">Name</span><span class="d-left">唐尧骅</span></p>
+                    <p class="d-clear"><span class="skill-name d-block d-left">Sex</span><span class="d-left">男</span></p>
+                    <p class="d-clear"><span class="skill-name d-block d-left">Age</span><span class="d-left">26</span></p>
+                    <p class="d-clear"><span class="skill-name d-block d-left">Career</span><span class="d-left">前端工程师；前端重构</span></p>
+                </div>
+                <div class="step-2">
+                    <h3 class="c-grey h-bg"><span class="fa fa-street-view"></span>前端履历</h3>
                     <p>自学前端，一年前端工作经验。</p>
                     <p>重庆云旅科技&nbsp;前端工程师&nbsp;2015年6月~2016年6月。</p>
                     <p>重庆加新科技&nbsp;网页设计&nbsp;2015年2月~2015年5月。</p>
-                </li>
-                <li class="step-3">
+                </div>
+                <div class="step-3">
                     <h3 class="c-grey h-bg"><span class="fa fa-briefcase"></span>个人项目</h3>
-                    <ol>
+                    <ol class="ul-skill">
                         <li>云旅科技官方网站&nbsp;<a class="a-link" href="http://www.ci-life.com" target="_blank"><span class="fa fa-caret-right"></span>点击链接</a>；</li>
                         <li>云端互动后台管理系统；</li>
                         <li>骰宝微信H5小游戏（项目中断）；</li>
                         <li>飞享购电商平台（项目中断）；</li>
                         <li>飞享购微信公众号（已上线，微信关注“飞享购”）；</li>
                     </ol>
-                </li>
-                <li class="step-4">
-                    <h3 class="c-grey h-bg"><span class="fa fa-arrow-up"></span>技术能力</h3>
+                </div>
+                <div class="step-4">
+                    <h3 class="c-grey h-bg"><span class="fa fa-star"></span>技术能力</h3>
                     <ul class="ul-skill">
                         <li class="d-clear"><span class="skill-name d-block d-left">Html5</span><span class="skill-cub d-block d-left"></span><span class="skill-cub d-block d-left"></span><span class="skill-cub d-block d-left"></span><span class="skill-cub d-block d-left"></span></li>
                         <li class="d-clear"><span class="skill-name d-block d-left">CSS3</span><span class="skill-cub d-block d-left"></span><span class="skill-cub d-block d-left"></span><span class="skill-cub d-block d-left"></span><span class="skill-cub d-block d-left"></span></li>
@@ -60,15 +83,14 @@
                         <li class="d-clear"><span class="skill-name d-block d-left">AngularJs</span><span class="skill-cub d-block d-left"></span>(自学中)</li>
                         <li class="d-clear"><span class="skill-name d-block d-left">各类样式框架</span><span class="a-link">bootstrap</span><span class="a-link">jQueryMobile</span><span class="a-link">WeiUI</span></li>
                     </ul>
-                </li>
-                <li class="step-5">
-
-                </li>
-
-            </ul>
-        </div>
+                </div>
+            </div>
 
     </div>
 </div>
+    </div>
+<script>
+
+</script>
 </body>
 </html>
