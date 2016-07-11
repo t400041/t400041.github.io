@@ -24,10 +24,15 @@ h1,h2,h3{font-weight: 500;}
 .d-center{position: relative; margin: 0 auto;}
 .d-clear{clear: both; overflow: hidden;}
 .c-grey{color: #5b5b5b;}
+.c-white{color: #f7f3ec;}
 .container{width: 100%; height: auto; min-height: 100%;  position: absolute;}
 .left-box{width: 225px; height: 100%; background: #39484d; position: fixed; left: 0; z-index: 123;}
-.left-box .head-box{width: 88px; height: 88px; margin: 120px auto 0; border-radius: 50%; overflow: hidden;}
+.left-box .head-box{width: 88px; height: 88px; margin: 120px auto 0; border-radius: 50%; overflow: hidden; transition: all .5s ease;}
 .left-box .head-box img{width: 100%; height: 100%;}
+.left-box .head-box:hover{ width: 120px; height: 120px; margin: 88px auto 0;}
+
+
+
 
 .h-title{ font-size: 23px; width: 100%; text-align: center; color: #f7f3ec; margin: 20px 0 0 0;}
 .p-title{text-align: center;color: #f7f3ec;}
@@ -42,7 +47,7 @@ h1,h2,h3{font-weight: 500;}
      box-shadow: inset 0 0 28px 28px #f2ebea; animation: bg-size 5s ease-out; background-size: 100% auto; overflow: hidden; position: relative;}
 .main-box .bg-box p{ text-align: center; font-size: 44px; color:#f7f3ec; text-shadow:0 0 2px #f7f3ec; position: absolute; bottom: 50px;
     animation: title-fade 5s ease-out;  width: 100%;}
-.n-box{opacity: 0; animation: step 1s ease-out 5s; animation-fill-mode: forwards; position: relative;}
+.n-box{opacity: 0; animation: step 1s ease-out 3s; animation-fill-mode: forwards; position: relative;}
 .h-p{font-size: 24px; line-height: 42px; border-bottom: 1px #67848f dashed; margin: 10px 0 5px 0;}
 .box-psl{height: 552px; width: 356px; position: relative; margin: 5% auto 0; left: 0; transition:all .7s ease-in-out;}
 .box-psl.toright{left: 40%;}
@@ -54,13 +59,14 @@ h1,h2,h3{font-weight: 500;}
 .cell-2{top:151px;left:3px; }
 .cell-3{top:151px;right:3px; }
 .cell-4{top: 302px;left:91.5px; }
-.a-back{}
+#goBack{width: 100px; text-align: center; background:#67848f; line-height: 40px; font-size: 20px; position: absolute; bottom: 5px;
+    left: 50%; margin-left: -50px; color: #fff; border-radius: 8px; display: none ;}
 #mycell{ position: absolute; z-index: 1; left: 0;}
 
 .a-link{padding: 0 10px; height: 30px; line-height: 30px; display: inline-block; border-radius: 10px; background:#67848f;color: #fff;
 margin-right: 5px;}
 .h-bg{line-height: 30px;}
-.h-bg .fa{margin-right: 8px;}
+.h-bg .fa, a .fa{margin-right: 8px;}
 .step-box{}
 .step-1,.step-2,.step-3,.step-4{animation-fill-mode: forwards !important; display: none;position: absolute; top: 160px;}
 .step-1 p>span{line-height: 32px;}

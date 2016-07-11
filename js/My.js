@@ -142,6 +142,11 @@ $(function(){
         c.stroke();
         $(".cell").data("ch","1");
         $(this).data("ch","0");
+        setTimeout("$('#goBack').addClass('d-block');",700);
+
+
+
+
     });
     $(".cell-1").click(function(){
 
@@ -150,9 +155,7 @@ $(function(){
         c.fillStyle=("#fff");
         c.fill();
         c.stroke();
-        $(".step-2").fadeOut(100);
-        $(".step-3").fadeOut(100);
-        $(".step-4").fadeOut(100);
+        $(".step").fadeOut(100);
         $(".step-1").fadeIn(500);
     });
     $(".cell-2").click(function(){
@@ -162,9 +165,7 @@ $(function(){
         c.fillStyle=("#fff");
         c.fill();
         c.stroke();
-        $(".step-1").fadeOut(100);
-        $(".step-3").fadeOut(100);
-        $(".step-4").fadeOut(100);
+        $(".step").fadeOut(100);
         $(".step-2").fadeIn(500);
     });
     $(".cell-3").click(function(){
@@ -174,9 +175,7 @@ $(function(){
         c.fillStyle=("#fff");
         c.fill();
         c.stroke();
-        $(".step-1").fadeOut(100);
-        $(".step-2").fadeOut(100);
-        $(".step-4").fadeOut(100);
+        $(".step").fadeOut(100);
         $(".step-3").fadeIn(500);
     });
     $(".cell-4").click(function(){
@@ -186,10 +185,23 @@ $(function(){
         c.fillStyle=("#fff");
         c.fill();
         c.stroke();
-        $(".step-1").fadeOut(100);
-        $(".step-2").fadeOut(100);
-        $(".step-3").fadeOut(100);
+        $(".step").fadeOut(100);
         $(".step-4").fadeIn(500);
+    });
+    $("#goBack").click(function(){
+        $(".cell").removeClass("cell-c");
+        $(".box-psl").removeClass("toright");
+        $(".step").fadeOut(100);
+        c.beginPath();
+        polygon(c,6,178,100,95,0);
+        polygon(c,6,89.5,251,95,0);
+        polygon(c,6,266.5,251,95,0);
+        polygon(c,6,178,402,95,0);
+        c.fillStyle="#67848f";
+        c.fill();
+        c.stroke();
+        $(".cell").data("ch","1");
+        $(this).removeClass("d-block");
     });
 });
 
