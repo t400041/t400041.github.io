@@ -1,0 +1,16 @@
+.container{width: 100%; height: auto; min-height: 100%;  position: absolute; max-width: 1024px;}
+.left-box{width: 100%; height: 100%; background: #39484d; position: fixed; left: 0; top: 50px; z-index: 123;}
+.left-box .head-box{width: 75px; height: 75px; margin: 70px auto 0; border-radius: 50%; overflow: hidden; transition: all .5s ease;}
+.left-box .head-box img{width: 100%; height: 100%;}
+
+
+.h-title{ font-size: 18px; width: 100%; text-align: center; color: #f7f3ec; margin: 10px 0 0 0;}
+.p-title{text-align: center;color: #f7f3ec;}
+.nav-left{width: 100%; margin: 30px 0 0 0; }
+.nav-left li a{width: 150px; margin: 0 auto; border-top:1px #c0c7d4 solid; text-align: center; color:#f7f3ec; height: 40px; line-height: 40px;}
+.nav-left li:last-child a{border-bottom: 1px #c0c7d4 solid;}
+.left-sw{width: 49px; height: 49px; background:#39484d; position: fixed; left: 0; top: 0; }
+.left-sw .fa{ line-height: 49px; font-size: 32px; text-align: center; width: 100%; transition: all .3s ease;}
+.left-sw .fa.on{transform: rotate(180deg); }
+
+

@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html>
-
+<html  lang="en">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="T400041的博客（测试） : blog test">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>T400041（test）</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css">
-
-    <title>T400041的博客（测试）</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width:1000px)" href="css/main-min.css">
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/My.js"></script>
   </head>
 
   <body>
-  <div class="container">
+  <div class="container" id="app">
     <div class="left-box">
       <a href="index.html" class="head-box d-block">
         <img src="img/head.png" alt=""/>
       </a>
-      <a href="index.html" class="h-title d-block">t400041的博客</a>
+      <a href="index.html" class="h-title d-block">t400041</a>
       <p class="p-title">Choose wisely.</p>
       <ul class="nav-left">
-        <li><a class="d-block" href="personal.html">博主信息</a></li>
-        <li><a class="d-block" href="">技术总结</a></li>
+        <li><a class="d-block" href="personal.html">
+        	<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                   <rect width="100%" height="100%"></rect>
+                   <text x="50%" y="50%">关于自己</text> 
+          </svg>
+        </a></li>
+      <!--<li><a class="d-block" href="">技术总结</a></li>-->
       </ul>
     </div>
+    <a class="left-sw" id="ls" data-ch="0"><span class="fa fa-arrow-right c-white"></span></a>
     <div class="main-box">
       <div class="main-cont">
         <div class="bg-box">
+          <img src="img/planet.jpg" alt="backgrond">
           <p>Welcome!</p>
         </div>
         <div class="n-box">
-          <h2 class="h-p c-grey">欢迎来到T400041的博客</h2>
-          <p class="c-grey">博客正在建设中，略显粗糙，技术总结和移动端页面随后就来，敬请期待。</p>
+          <h2 class="h-p c-grey">Test</h2>
+          <p class="c-grey"></p>
         </div>
-
       </div>
-
     </div>
   </div>
-
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
   </body>
 </html>

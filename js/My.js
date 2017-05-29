@@ -2,7 +2,9 @@
  * Created by admin on 2016/7/11.
  */
 //    定义多边形函数
+
 $(function(){
+
     var canvas=document.getElementById("mycell");
     var c=canvas.getContext("2d");
 
@@ -192,7 +194,7 @@ $(function(){
         $(".cell").removeClass("cell-c");
         $(".box-psl").removeClass("toright");
         $(".step").fadeOut(100);
-        c.beginPath();
+        c.beginPath();               //重新绘制六边形
         polygon(c,6,178,100,95,0);
         polygon(c,6,89.5,251,95,0);
         polygon(c,6,266.5,251,95,0);
@@ -202,6 +204,11 @@ $(function(){
         c.stroke();
         $(".cell").data("ch","1");
         $(this).removeClass("d-block");
+    });
+
+    $(".left-sw").click(function(){
+        alert(1);
+
     });
 });
 

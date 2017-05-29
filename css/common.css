@@ -6,8 +6,8 @@ a{text-decoration: none; cursor: pointer;}
 ul{list-style: none; padding: 0; margin: 0;}
 h1,h2,h3{font-weight: 500;}
 @keyframes bg-size {
-    from{background-size: 150% auto;}
-    to{background-size: 100% auto;}
+    from{width: 150% ;height: auto;}
+    to{width: 120% ;height: auto;}
 }
 @keyframes title-fade {
     from{opacity: 0;}
@@ -17,61 +17,56 @@ h1,h2,h3{font-weight: 500;}
     from{top: 20px; opacity: 0;}
     to{top: 0;opacity: 1;}
 }
+@keyframes a_cell{
+    from{stroke-dasharray: 160 520;
+        stroke-dashoffset: -460;
+        stroke-opacity:.5; 
+        stroke-width: 2px;
+    }
+    to{stroke-dasharray: 1800 520;
+        stroke-dashoffset: 0;
+        stroke-opacity: .8;
+        stroke-width: 3px;
+    }
+}
+@keyframes a_rect{
+    from{stroke-dasharray: 120 520;
+         stroke-dashoffset: -180;
+         stroke-width: 4px;
+         stroke: #fff;
+    }
+    to{stroke-dasharray: 1200 ;
+         stroke-dashoffset:80;
+         stroke-width: 2px;
+         stroke: #ffc425;
+    }
+}
+@keyframes a_rect2{
+	from{stroke-dasharray:0 520;
+         stroke-dashoffset: -180;
+         stroke-width: 2px;
+         stroke: #fff;}
+	to{stroke-dasharray: 1200 ;
+         stroke-dashoffset:0;
+         stroke-width: 2px;
+         stroke: #ffc425;}
+}
+@keyframes show{
+    from{
+    	display: block;
+        opacity: 0;
+    }
+    to{
+    	display: block;
+        opacity: 1;
+    }
+}
 
 .d-left{float: left;}
 .d-right{float: right;}
 .d-block{display: block !important;}
 .d-center{position: relative; margin: 0 auto;}
 .d-clear{clear: both; overflow: hidden;}
-.c-grey{color: #5b5b5b;}
-.c-white{color: #f7f3ec;}
-.container{width: 100%; height: auto; min-height: 100%;  position: absolute;}
-.left-box{width: 225px; height: 100%; background: #39484d; position: fixed; left: 0; z-index: 123;}
-.left-box .head-box{width: 88px; height: 88px; margin: 120px auto 0; border-radius: 50%; overflow: hidden; transition: all .5s ease;}
-.left-box .head-box img{width: 100%; height: 100%;}
-.left-box .head-box:hover{ width: 120px; height: 120px; margin: 88px auto 0;}
-
-
-
-
-.h-title{ font-size: 23px; width: 100%; text-align: center; color: #f7f3ec; margin: 20px 0 0 0;}
-.p-title{text-align: center;color: #f7f3ec;}
-.nav-left{width: 100%; margin: 40px 0 0 0; }
-.nav-left li a{width: 160px; margin: 0 auto; border-top:1px #c0c7d4 solid; text-align: center; color:#f7f3ec; height: 30px; line-height: 30px;}
-.nav-left li:last-child a{border-bottom: 1px #c0c7d4 solid;}
-.nav-left li a:hover{background:#67848f; box-shadow: inset 0 0 5px 5px #39484d;}
-
-.main-box{width: 100%; padding-left:225px; position: absolute; background: #f2ebea; min-height: 100%;}
-.main-cont{width: 100%;  right: 0; padding: 40px 5%;}
-.main-box .bg-box{width: 100%; margin: 80px auto; height: 450px; background: url("http://ww4.sinaimg.cn/large/ebabbb9dgw1f5mfsagjmxj21hc0q04fn.jpg") no-repeat center;
-     box-shadow: inset 0 0 28px 28px #f2ebea; animation: bg-size 5s ease-out; background-size: 100% auto; overflow: hidden; position: relative;}
-.main-box .bg-box p{ text-align: center; font-size: 44px; color:#f7f3ec; text-shadow:0 0 2px #f7f3ec; position: absolute; bottom: 50px;
-    animation: title-fade 5s ease-out;  width: 100%;}
-.n-box{opacity: 0; animation: step 1s ease-out 3s; animation-fill-mode: forwards; position: relative;}
-.h-p{font-size: 24px; line-height: 42px; border-bottom: 1px #67848f dashed; margin: 10px 0 5px 0;}
-.box-psl{height: 552px; width: 356px; position: relative; margin: 5% auto 0; left: 0; transition:all .7s ease-in-out;}
-.box-psl.toright{left: 40%;}
-.box-psl .cell{width: 173px; height: 200px;  color: #f7f3ec; text-align: center; overflow: hidden; position: absolute; cursor: pointer; z-index: 2;}
-.box-psl .cell .cell-icon{font-size: 40px; position: absolute; margin: 60px auto 10px ; width: 100%; z-index: 5}
-.box-psl .cell p{font-size: 16px; width: 100%; position: absolute; bottom: 50px; z-index: 5}
-.cell.cell-c{color:#67848f; }
-.cell-1{top:0;left:91.5px; }
-.cell-2{top:151px;left:3px; }
-.cell-3{top:151px;right:3px; }
-.cell-4{top: 302px;left:91.5px; }
-#goBack{width: 100px; text-align: center; background:#67848f; line-height: 40px; font-size: 20px; position: absolute; bottom: 5px;
-    left: 50%; margin-left: -50px; color: #fff; border-radius: 8px; display: none ;}
-#mycell{ position: absolute; z-index: 1; left: 0;}
-
-.a-link{padding: 0 10px; height: 30px; line-height: 30px; display: inline-block; border-radius: 10px; background:#67848f;color: #fff;
-margin-right: 5px;}
-.h-bg{line-height: 30px;}
-.h-bg .fa, a .fa{margin-right: 8px;}
-.step-box{}
-.step-1,.step-2,.step-3,.step-4{animation-fill-mode: forwards !important; display: none;position: absolute; top: 160px;}
-.step-1 p>span{line-height: 32px;}
-
-.ul-skill li{line-height: 32px; margin: 15px 0; }
-
-.skill-name{width: 100px;line-height: 30px;}
-.skill-cub{width: 40px; height:30px; background: #67848f; margin:0 1px !important; border-radius: 1px;}
+.c-grey{color: #797979;}
+.c-white{color: #ffe;}
+.d-none{display: none;}
